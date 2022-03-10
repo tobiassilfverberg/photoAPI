@@ -1,0 +1,30 @@
+{
+  "name": "photoapi",
+  "version": "1.0.0",
+  "description": "<h1> Assignment 1 - Photo API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "cross-env DEBUG=photoAPI:* nodemon ./bin/www",
+    "debug": "cross-env DEBUG=photoAPI:* nodemon --inspect ./bin/www"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "bookshelf": "^1.2.0",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^16.0.0",
+    "express": "~4.16.1",
+    "express-validator": "^6.14.0",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "~1.9.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.15"
+  }
+}
