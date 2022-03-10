@@ -1,0 +1,496 @@
+{
+	"info": {
+		"_postman_id": "3ff7220b-7098-41de-9082-1a93d1c32f49",
+		"name": "photoAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Photos",
+			"item": [
+				{
+					"name": "GET /photos",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0b2JpYXNzaWxmdmVyYmVyZ0BnbWFpbC5jb20iLCJ1c2VyX2lkIjoxLCJuYW1lIjoiVG9iaWFzIFNpbGZ2ZXJiZXJnIiwiaWF0IjoxNjQ2OTI1ODg2LCJleHAiOjE2NDY5MzMwODZ9.BAgdNROetzxai4p7KIo9iR3dGf47MBHVMCSo_5w_tdk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://safe-gorge-23476.herokuapp.com/photos",
+							"protocol": "https",
+							"host": [
+								"safe-gorge-23476",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"photos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST /photos",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0b2JpYXNzaWxmdmVyYmVyZ0BnbWFpbC5jb20iLCJ1c2VyX2lkIjoxLCJuYW1lIjoiVG9iaWFzIFNpbGZ2ZXJiZXJnIiwiaWF0IjoxNjQ2OTIwMTI0LCJleHAiOjE2NDY5MjczMjR9.J7eM1DtSJEd4YDqXMEkfRmh2OeEWIVwijOredlHkiG8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Crying\",\n    \"url\": \"https://image.cry\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://safe-gorge-23476.herokuapp.com/photos",
+							"protocol": "https",
+							"host": [
+								"safe-gorge-23476",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"photos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET /photos/id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0b2JpYXNzaWxmdmVyYmVyZ0BnbWFpbC5jb20iLCJ1c2VyX2lkIjoxLCJuYW1lIjoiVG9iaWFzIFNpbGZ2ZXJiZXJnIiwiaWF0IjoxNjQ2OTIwMTI0LCJleHAiOjE2NDY5MjczMjR9.J7eM1DtSJEd4YDqXMEkfRmh2OeEWIVwijOredlHkiG8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://safe-gorge-23476.herokuapp.com/photos/1",
+							"protocol": "https",
+							"host": [
+								"safe-gorge-23476",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"photos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE photo/:photoId",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0b2JpYXNzaWxmdmVyYmVyZ0BnbWFpbC5jb20iLCJ1c2VyX2lkIjoxLCJuYW1lIjoiVG9iaWFzIFNpbGZ2ZXJiZXJnIiwiaWF0IjoxNjQ2OTA0ODczLCJleHAiOjE2NDY5MTIwNzN9.kEwd6MVbTjz0D6EoNJWpnwQ2PDcLdaMBhdRd7iD_hI0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://safe-gorge-23476.herokuapp.com/photos/7",
+							"protocol": "https",
+							"host": [
+								"safe-gorge-23476",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"photos",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /photos/id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0b2JpYXNzaWxmdmVyYmVyZ0BnbWFpbC5jb20iLCJ1c2VyX2lkIjoxLCJuYW1lIjoiVG9iaWFzIFNpbGZ2ZXJiZXJnIiwiaWF0IjoxNjQ2OTA0ODczLCJleHAiOjE2NDY5MTIwNzN9.kEwd6MVbTjz0D6EoNJWpnwQ2PDcLdaMBhdRd7iD_hI0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Super happy photo\",\n    \"comment\": \"Such happy much wow\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://safe-gorge-23476.herokuapp.com/photos/1",
+							"protocol": "https",
+							"host": [
+								"safe-gorge-23476",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"photos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Albums",
+			"item": [
+				{
+					"name": "GET /albums",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0b2JpYXNzaWxmdmVyYmVyZ0BnbWFpbC5jb20iLCJ1c2VyX2lkIjoxLCJuYW1lIjoiVG9iaWFzIFNpbGZ2ZXJiZXJnIiwiaWF0IjoxNjQ2OTEyNTY3LCJleHAiOjE2NDY5MTk3Njd9.usYBVZD5_uUdsf1FL8AVsWwJp7z7VmZ05Cnlc4wTzwc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://safe-gorge-23476.herokuapp.com/albums",
+							"protocol": "https",
+							"host": [
+								"safe-gorge-23476",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"albums"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET /albums/id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0b2JpYXNzaWxmdmVyYmVyZ0BnbWFpbC5jb20iLCJ1c2VyX2lkIjoxLCJuYW1lIjoiVG9iaWFzIFNpbGZ2ZXJiZXJnIiwiaWF0IjoxNjQ2OTIwMTI0LCJleHAiOjE2NDY5MjczMjR9.J7eM1DtSJEd4YDqXMEkfRmh2OeEWIVwijOredlHkiG8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://safe-gorge-23476.herokuapp.com/albums/1",
+							"protocol": "https",
+							"host": [
+								"safe-gorge-23476",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"albums",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST /albums",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0b2JpYXNzaWxmdmVyYmVyZ0BnbWFpbC5jb20iLCJ1c2VyX2lkIjoxLCJuYW1lIjoiVG9iaWFzIFNpbGZ2ZXJiZXJnIiwiaWF0IjoxNjQ2OTA0ODczLCJleHAiOjE2NDY5MTIwNzN9.kEwd6MVbTjz0D6EoNJWpnwQ2PDcLdaMBhdRd7iD_hI0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"My favorite album\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://safe-gorge-23476.herokuapp.com/albums",
+							"protocol": "https",
+							"host": [
+								"safe-gorge-23476",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"albums"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /albums/id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0b2JpYXNzaWxmdmVyYmVyZ0BnbWFpbC5jb20iLCJ1c2VyX2lkIjoxLCJuYW1lIjoiVG9iaWFzIFNpbGZ2ZXJiZXJnIiwiaWF0IjoxNjQ2OTA0ODczLCJleHAiOjE2NDY5MTIwNzN9.kEwd6MVbTjz0D6EoNJWpnwQ2PDcLdaMBhdRd7iD_hI0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Confetti 4 life\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://safe-gorge-23476.herokuapp.com/albums/1",
+							"protocol": "https",
+							"host": [
+								"safe-gorge-23476",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"albums",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST /albums/:albumId/photos",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0b2JpYXNzaWxmdmVyYmVyZ0BnbWFpbC5jb20iLCJ1c2VyX2lkIjoxLCJuYW1lIjoiVG9iaWFzIFNpbGZ2ZXJiZXJnIiwiaWF0IjoxNjQ2OTIwMTI0LCJleHAiOjE2NDY5MjczMjR9.J7eM1DtSJEd4YDqXMEkfRmh2OeEWIVwijOredlHkiG8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"photo_id\": 13\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://safe-gorge-23476.herokuapp.com/albums/3/photos",
+							"protocol": "https",
+							"host": [
+								"safe-gorge-23476",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"albums",
+								"3",
+								"photos"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "POST /register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"vahänder@gmail\",\n    \"password\": \"yolomannen\",\n    \"first_name\": \"tjena\",\n    \"last_name\": \"tjabba\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://safe-gorge-23476.herokuapp.com/register",
+					"protocol": "https",
+					"host": [
+						"safe-gorge-23476",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST /login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"tobiassilfverberg@gmail.com\",\n    \"password\": \"tobbemannen\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://safe-gorge-23476.herokuapp.com/login",
+					"protocol": "https",
+					"host": [
+						"safe-gorge-23476",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST /refresh",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0b2JpYXNzaWxmdmVyYmVyZ0BnbWFpbC5jb20iLCJ1c2VyX2lkIjoxLCJuYW1lIjoiVG9iaWFzIFNpbGZ2ZXJiZXJnIiwiaWF0IjoxNjQ2NjYxNTg2LCJleHAiOjE2NzgyMTkxODZ9.pZLszJJJ8Y8Ys6HnCIW8uPbhJT1Y_-MFphUPuxCGN-c",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://safe-gorge-23476.herokuapp.com/refresh",
+					"protocol": "https",
+					"host": [
+						"safe-gorge-23476",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"refresh"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
